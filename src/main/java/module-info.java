@@ -1,6 +1,8 @@
 module com.example.musicapp {
     requires javafx.controls;
     requires javafx.fxml;
+    requires javafx.media;
+    requires javafx.graphics;
     
     
     opens com.example.musicapp to javafx.fxml;

@@ -29,8 +29,8 @@ application {
 }
 
 javafx {
-    version = '18.0.1'
-    modules = ['javafx.controls', 'javafx.fxml']
+    version = '19'
+    modules = ['javafx.controls', 'javafx.fxml', 'javafx.media', 'javafx.graphics', 'javafx.base']
 }
 
 dependencies {

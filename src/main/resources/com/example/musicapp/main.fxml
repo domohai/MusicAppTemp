@@ -1,16 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<BorderPane xmlns="http://javafx.com/javafx/17.0.2-ea"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.musicapp.Controller">
+    <left>
+        <VBox minWidth="200">
 
-<?import core.CustomListCell?>
-<BorderPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.musicapp.Controller">
+        </VBox>
+    </left>
+
     <top>
+        <GridPane>
 
+        </GridPane>
+        <TextField>
+
+        </TextField>
     </top>
-    <center>
-        <CustomListCell>
 
-        </CustomListCell>
+    <center>
+        <TableView fx:id="table">
+
+        </TableView>
     </center>
+
+    <bottom>
+        <GridPane minHeight="80" gridLinesVisible="true">
+            <Label fx:id="songName" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <Button fx:id="playButton" text="play" onAction="#playButton"
+            />
+        </GridPane>
+    </bottom>
 
 </BorderPane>
